@@ -3,7 +3,7 @@
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-# General
+## General
 How to use the Python interpreter
 How to print text and variables using print
 How to use strings
