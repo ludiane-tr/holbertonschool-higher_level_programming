@@ -27,3 +27,5 @@ Tasks
 4. Divide a list
 5. Raise exception
 6. Raise a message
+
+The code can be test with the main.py files.
