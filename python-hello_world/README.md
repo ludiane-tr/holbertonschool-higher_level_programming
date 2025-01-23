@@ -33,3 +33,4 @@ To run any of the Python scripts, use the following command:
 ```bash
 $ python3 <filename>.py
 ```
+The code can be test with the main.py files.

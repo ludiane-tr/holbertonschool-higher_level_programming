@@ -37,3 +37,5 @@
 - [x] Best score
 - [x] Multiply by using map
 - [x] Roman to Integer    
+
+The code can be test with the main.py files.

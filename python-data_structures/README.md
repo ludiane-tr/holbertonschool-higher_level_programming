@@ -19,3 +19,5 @@
 - [x]Infinite addition
 - [x]Who are you?
 - [x]Everything can be imported
+
+The code can be test with the main.py files.

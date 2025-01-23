@@ -20,12 +20,12 @@
 * The length of your files will be tested using wc
 
 Tasks
-0. Safe list printing
-1. Safe printing of an integers list
-2. Print and count integers
-3. Integers division with debug
-4. Divide a list
-5. Raise exception
-6. Raise a message
+- [x] Safe list printing
+- [x] Safe printing of an integers list
+- [x] Print and count integers
+- [x] Integers division with debug
+- [x] Divide a list
+- [x] Raise exception
+- [x] Raise a message
 
 The code can be test with the main.py files.
