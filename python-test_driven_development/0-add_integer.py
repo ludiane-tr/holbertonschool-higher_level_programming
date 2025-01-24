@@ -5,7 +5,6 @@ a and b must be integers or floats
 a and b must be first casted to integers if they are float
 """
 
-
 def add_integer(a, b=98):
     """ Add to integers or floats
         a: first number
