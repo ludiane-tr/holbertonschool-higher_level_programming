@@ -30,4 +30,23 @@ def text_indentation(text):
             continue
         i += 1
     print(result, end="")
-    
+
+def add_integer(a, b=98):
+    """
+    Add two integers.
+
+    Args:
+        a (int): The first integer.
+        b (int): The second integer, default is 98.
+
+    Returns:
+        int: The sum of a and b.
+
+    Raise:
+        TypeError: if a or b are not integers.
+    """
+    if not isinstance(a, int):
+        raise TypeError("a must be an integer")
+    if not isinstance(b, int):
+        raise TypeError("b must be an integer")
+    return a + b
