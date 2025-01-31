@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module defining the Rectangle class with width, height, 
-area, perimeter, and customizable string representation. 
+Module defining the Rectangle class with width, height,
+area, perimeter, and customizable string representation.
 Tracks instance count and allows rectangle comparison by area.
 """
 
