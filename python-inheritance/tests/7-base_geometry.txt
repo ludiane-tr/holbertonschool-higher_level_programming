@@ -92,6 +92,5 @@ Edge cases:
 
 Testing __doc__:
 
-    >>> print(BaseGeometry.area.__doc__)
+>>> print(BaseGeometry.area.__doc__)
     Exception
-    
