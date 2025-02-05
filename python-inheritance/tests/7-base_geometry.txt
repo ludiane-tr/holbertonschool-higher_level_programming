@@ -3,7 +3,7 @@ Guide for 7-base_geometry.py
 
 Overview
 ========
-This module contains a class called `BaseGeometry`, which provides foundational methods for geometric operations.
+This module contains a class which provides methods for geometric operations.
 
 How to Use
 ==========
