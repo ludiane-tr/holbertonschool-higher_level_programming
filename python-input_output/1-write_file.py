@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Function that writes a string to a text file and return the len'''
+'''
+Function that writes a string to a text file and return the len
+'''
 
 
 def write_file(filename="", text=""):
