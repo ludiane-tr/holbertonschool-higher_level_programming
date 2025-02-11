@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' 
+'''
 Adds all arguments to a python list and save them to a file
 '''
 
