@@ -18,7 +18,8 @@
 
 ## 2. Structure de HTTP
 
-```mermaid
+```
+mermaid
 graph TD;
     A[Requête HTTP] -->|Méthode HTTP| B[GET / POST / PUT / DELETE]
     A -->|URL| C[Uniform Resource Locator]
