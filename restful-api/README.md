@@ -18,8 +18,7 @@
 
 ## 2. Structure de HTTP
 
-```
-mermaid
+```mermaid
 sequenceDiagram
     participant Client
     participant Server
