@@ -1,5 +1,7 @@
 # 0. Basics of HTTP/HTTPS
 
+HTTP (HyperText Transfer Protocol) is a communication protocol used for transferring data over the web. It enables communication between a client (such as a web browser) and a server by sending requests and receiving responses. HTTP defines how these exchanges should be structured to access resources (web pages, images, files, etc.) on the internet. It is a stateless protocol, meaning it does not retain any information about previous interactions.
+
 ## 1. Différences entre HTTP et HTTPS
 
 | **Caractéristique** | **HTTP** | **HTTPS** |
