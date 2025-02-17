@@ -12,7 +12,7 @@
 | **URL** | Commence par `http://` | Commence par `https://` |
 | **Utilisation** | Convient aux sites sans données sensibles (ex: blogs) | Recommandé pour les sites traitant des informations sensibles (ex: banques, e-commerce) |
 
-➡️ **Conclusion** : HTTPS est une version améliorée et sécurisée de HTTP, assurant **confidentialité, intégrité et authentification**. Il est indispensable pour protéger les communications sur Internet.  
+➡️ HTTPS est une version améliorée et sécurisée de HTTP, assurant **confidentialité, intégrité et authentification**. Il est indispensable pour protéger les communications sur Internet.  
 
 ---
 
@@ -29,7 +29,7 @@ sequenceDiagram
     deactivate Server
 ```
 
-📌 **Explication du diagramme :**  
+📌 
 - Une requête HTTP est composée de **quatre éléments principaux**.  
 - La **Méthode HTTP** détermine l’action (ex: `GET`, `POST`).  
 - L’**URL** identifie la ressource demandée.  
@@ -42,7 +42,7 @@ Une réponse HTTP contient également plusieurs éléments :
 - **En-têtes (Headers)** : Informations supplémentaires sur la réponse.  
 - **Corps (Body)** : Contient les données renvoyées par le serveur (ex: le contenu HTML d’une page web).  
 
-➡️ **Conclusion** : HTTP fonctionne sur un modèle **client-serveur**, où le client envoie une requête et le serveur répond avec des informations structurées sous forme de **statuts, en-têtes et données**.
+➡️  HTTP fonctionne sur un modèle **client-serveur**, où le client envoie une requête et le serveur répond avec des informations structurées sous forme de **statuts, en-têtes et données**.
 
 ---
 
@@ -54,8 +54,6 @@ Une réponse HTTP contient également plusieurs éléments :
 | **POST** | Envoyer des données au serveur | Envoyer un formulaire d’inscription |
 | **PUT** | Mettre à jour une ressource | Modifier un profil utilisateur |
 | **DELETE** | Supprimer une ressource | Supprimer un compte utilisateur |
-
-➡️ **Remarque** : D'autres méthodes comme `PATCH`, `HEAD` ou `OPTIONS` existent, mais `GET`, `POST`, `PUT` et `DELETE` sont les plus courantes.
 
 ---
 
@@ -69,7 +67,7 @@ Une réponse HTTP contient également plusieurs éléments :
 | **404** | Page non trouvée | L’URL demandée n’existe pas |
 | **500** | Erreur serveur | Un problème côté serveur empêche l’affichage |
 
-➡️ **Explication** : Les codes de statut HTTP sont renvoyés par le serveur pour indiquer l’état d’une requête. Ils sont classés par catégories :  
+➡️  Les codes de statut HTTP sont renvoyés par le serveur pour indiquer l’état d’une requête. Ils sont classés par catégories :  
 - **1xx** : Informations  
 - **2xx** : Succès  
 - **3xx** : Redirections  
