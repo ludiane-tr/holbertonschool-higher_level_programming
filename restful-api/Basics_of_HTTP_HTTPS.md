@@ -29,7 +29,6 @@ sequenceDiagram
     deactivate Server
 ```
 
-📌 
 - Une requête HTTP est composée de **quatre éléments principaux**.  
 - La **Méthode HTTP** détermine l’action (ex: `GET`, `POST`).  
 - L’**URL** identifie la ressource demandée.  

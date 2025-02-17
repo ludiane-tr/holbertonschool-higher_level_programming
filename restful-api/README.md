@@ -43,8 +43,26 @@ Developing a **strong understanding** of how to **consume, develop, secure, and 
 
 ## 📌 REST API Conceptual Diagram
 
-+-------+ +-------+ +---------+ +---------+ | | Request | | Process | | Fetch/ | | | | -----> | | -------> | | Modify | | | | | | | | -------> | | | | <----- | | <------- | | | | | | Response | | Return | | | | +-------+ +-------+ +---------+ +---------+ Client Web Server API Server Database
+```mermaid
+sequenceDiagram
+    participant Client
+    participant WebServer
+    participant APIServer
+    participant Database
 
+    Client->>WebServer: Request
+    activate WebServer
+    WebServer->>APIServer: Process Request
+    activate APIServer
+    APIServer->>Database: Fetch/Modify Data
+    activate Database
+    Database-->>APIServer: Return Data
+    deactivate Database
+    APIServer-->>WebServer: Response
+    deactivate APIServer
+    WebServer-->>Client: Response
+    deactivate WebServer
+```
 
 ### 🔹 Components:
 
