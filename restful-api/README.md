@@ -18,7 +18,8 @@
 
 ## 2. Structure de HTTP
 
-```mermaid
+```
+mermaid
 graph TD;
     A[Requête HTTP] --> B[Méthode HTTP]
     A --> C[URL (Uniform Resource Locator)]
@@ -34,6 +35,7 @@ graph TD;
     D -->| | D2[User-Agent]
     
     E -->|Exemples| E1[Données envoyées (ex: formulaire)]
+```
 
 📌 **Explication du diagramme :**  
 - Une requête HTTP est composée de **quatre éléments principaux**.  
