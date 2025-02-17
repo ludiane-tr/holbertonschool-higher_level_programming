@@ -20,21 +20,14 @@
 
 ```
 mermaid
-graph TD;
-    A[Requête HTTP] --> B[Méthode HTTP]
-    A --> C[URL (Uniform Resource Locator)]
-    A --> D[En-têtes (Headers)]
-    A --> E[Corps (Body) (optionnel)]
-    
-    B -->|Exemples| B1[GET]
-    B -->| | B2[POST]
-    B -->| | B3[PUT]
-    B -->| | B4[DELETE]
-    
-    D -->|Exemples| D1[Content-Type]
-    D -->| | D2[User-Agent]
-    
-    E -->|Exemples| E1[Données envoyées (ex: formulaire)]
+sequenceDiagram
+    participant Client
+    participant Server
+    Client->>Server: HTTP Request
+    activate Server
+    Note right of Server: Process Request
+    Server-->>Client: HTTP Response
+    deactivate Server
 ```
 
 📌 **Explication du diagramme :**  
