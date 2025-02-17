@@ -1,23 +1,9 @@
-# holbertonschool-higher_level_programming
-
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
-## General
-How to use the Python interpreter
-How to print text and variables using print
-How to use strings
-What are indexing and slicing in Python
-What is the official Python coding style and how to check your code with pycodestyle
-
-## Requirements
-Python Scripts
-Allowed editors: vi, vim, emacs
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.*)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/python3
-A README.md file at the root of the repo, containing a description of the repository
-A README.md file, at the root of the folder of this project, is mandatory
-Your code should use the pycodestyle (version 2.7.*)
-All your files must be executable
-The length of your files will be tested using wc
+|  | :dart: Holberton School  -  Higher Level Programming :dart:                    |
+| :------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|  |  **Python** :snake:  |
+|  $${\color{yellow}Week}$$ :one: | [Hello World](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-hello_world) :white_check_mark: -  [If Else Loops Function](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions) :white_check_mark:  - [Import Modules](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-import_modules) ✅   | 
+|  $${\color{yellow}Week}$$ :two: | [Data Structures](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-data_structures) :white_check_mark: -  [More Data Structures](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-more_data_structures) :white_check_mark:  - [Exceptions](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-exceptions) :white_check_mark:  -  [Test-Driven Development](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-test_driven_development) :white_check_mark:  | 
+|  $${\color{yellow}Week}$$ :three: | [Classes](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-classes) :white_check_mark: -  [More Classes and Objects](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-more_classes) :white_check_mark:   | 
+|  $${\color{orange}Week}$$ :four: | [Inheritance](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-inheritance) :white_check_mark: -  [Abstract Classes and Interfaces](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-abc) :white_check_mark:   | 
+|  $${\color{orange}Week}$$ :five: | [Input - Output](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-input_output) :white_check_mark: -  [Serialization](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/python-serialization) :white_check_mark:   | 
+|  $${\color{orange}Week}$$ :six: | [RESTful API](https://github.com/ludiane-tr/holbertonschool-higher_level_programming/tree/main/restful-api) :white_check_mark:   | 
