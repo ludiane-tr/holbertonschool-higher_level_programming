@@ -46,10 +46,12 @@ An HTTP response also contains several elements:
 
 ## 3. Common HTTP Methods
 
-| **GET**    | Retrieve data                  | Display a web page or fetch information from an API |
-| **POST**   | Send data to the server        | Submit a registration form                         |
-| **PUT**    | Update a resource              | Modify a user profile                               |
-| **DELETE** | Delete a resource              | Delete a user account                               |
+| **Method** | **Description**               | **Use Case**                                      |
+|------------|-------------------------------|--------------------------------------------------|
+| **GET**    | Retrieve data                 | Display a web page or fetch information from an API |
+| **POST**   | Send data to the server       | Submit a registration form                      |
+| **PUT**    | Update a resource             | Modify a user profile                            |
+| **DELETE** | Delete a resource             | Delete a user account                           |
 
 ## 4. Common HTTP Status Codes
 
