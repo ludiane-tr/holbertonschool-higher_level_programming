@@ -2,23 +2,21 @@
 
 HTTP (HyperText Transfer Protocol) is a communication protocol used for transferring data over the web. It enables communication between a client (such as a web browser) and a server by sending requests and receiving responses. HTTP defines how these exchanges should be structured to access resources (web pages, images, files, etc.) on the internet. It is a stateless protocol, meaning it does not retain any information about previous interactions.
 
-## 1. Différences entre HTTP et HTTPS
+## 1. Differences between HTTP and HTTPS
 
-| **Caractéristique** | **HTTP** | **HTTPS** |
-|----------------------|---------|-----------|
-| **Sécurité** | Non chiffré, vulnérable aux attaques (ex: interception de données) | Chiffré avec SSL/TLS, sécurisé contre les attaques (ex: écoute clandestine, MITM) |
-| **Intégrité** | Risque de modification des données par un attaquant | Protection contre la modification des données grâce au chiffrement |
-| **Confidentialité** | Les données sont visibles en clair sur le réseau | Les données sont chiffrées et illisibles pour les tiers |
-| **Authentification** | Pas de garantie d'authenticité du serveur | Utilisation de certificats SSL/TLS pour prouver l’identité du serveur |
-| **Port utilisé** | Généralement **80** | Généralement **443** |
-| **URL** | Commence par `http://` | Commence par `https://` |
-| **Utilisation** | Convient aux sites sans données sensibles (ex: blogs) | Recommandé pour les sites traitant des informations sensibles (ex: banques, e-commerce) |
+| **Characteristic**    | **HTTP**                                                       | **HTTPS**                                                     |
+|-----------------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| **Security**          | Not encrypted, vulnerable to attacks (e.g., data interception) | Encrypted with SSL/TLS, secure against attacks (e.g., eavesdropping, MITM) |
+| **Integrity**         | Risk of data modification by an attacker                      | Protection against data modification through encryption        |
+| **Confidentiality**   | Data is visible in plain text over the network                 | Data is encrypted and unreadable to third parties              |
+| **Authentication**    | No guarantee of server authenticity                           | Use of SSL/TLS certificates to prove the server's identity     |
+| **Port used**         | Generally **80**                                              | Generally **443**                                              |
+| **URL**               | Starts with `http://`                                          | Starts with `https://`                                         |
+| **Usage**             | Suitable for sites without sensitive data (e.g., blogs)        | Recommended for sites handling sensitive information (e.g., banks, e-commerce) |
 
-➡️ HTTPS est une version améliorée et sécurisée de HTTP, assurant **confidentialité, intégrité et authentification**. Il est indispensable pour protéger les communications sur Internet.  
+➡️ HTTPS is an enhanced and secure version of HTTP, ensuring **confidentiality, integrity, and authentication**. It is essential for protecting communications on the internet.
 
----
-
-## 2. Structure de HTTP
+## 2. Structure of HTTP
 
 ```mermaid
 sequenceDiagram
@@ -31,48 +29,42 @@ sequenceDiagram
     deactivate Server
 ```
 
-- Une requête HTTP est composée de **quatre éléments principaux**.  
-- La **Méthode HTTP** détermine l’action (ex: `GET`, `POST`).  
-- L’**URL** identifie la ressource demandée.  
-- Les **En-têtes (Headers)** fournissent des informations supplémentaires sur la requête.  
-- Le **Corps (Body)** est **optionnel** et contient les données envoyées (ex: lors d’un `POST`).  
+### Structure of an HTTP request:
+An HTTP request consists of four main elements:
+- The **HTTP Method** determines the action (e.g., `GET`, `POST`).
+- The **URL** identifies the requested resource.
+- **Headers** provide additional information about the request.
+- The **Body** is optional and contains the data sent (e.g., during a `POST`).
 
-### **Structure d'une réponse HTTP :**
-Une réponse HTTP contient également plusieurs éléments :  
-- **Code de statut** : Indique le résultat de la requête (ex: `200 OK`, `404 Not Found`, `500 Internal Server Error`).  
-- **En-têtes (Headers)** : Informations supplémentaires sur la réponse.  
-- **Corps (Body)** : Contient les données renvoyées par le serveur (ex: le contenu HTML d’une page web).  
+### Structure of an HTTP response:
+An HTTP response also contains several elements:
+- **Status code**: Indicates the result of the request (e.g., `200 OK`, `404 Not Found`, `500 Internal Server Error).
+- **Headers**: Additional information about the response.
+- **Body**: Contains the data returned by the server (e.g., the HTML content of a web page).
 
-➡️  HTTP fonctionne sur un modèle **client-serveur**, où le client envoie une requête et le serveur répond avec des informations structurées sous forme de **statuts, en-têtes et données**.
+➡️ HTTP works on a client-server model, where the client sends a request, and the server responds with information structured as status, headers, and data.
 
----
+## 3. Common HTTP Methods
 
-## 3. Méthodes HTTP courantes
+| **GET**    | Retrieve data                  | Display a web page or fetch information from an API |
+| **POST**   | Send data to the server        | Submit a registration form                         |
+| **PUT**    | Update a resource              | Modify a user profile                               |
+| **DELETE** | Delete a resource              | Delete a user account                               |
 
-| **Méthode** | **Description** | **Cas d’utilisation** |
-|------------|---------------|----------------------|
-| **GET** | Récupérer des données | Afficher une page web ou récupérer des infos d’une API |
-| **POST** | Envoyer des données au serveur | Envoyer un formulaire d’inscription |
-| **PUT** | Mettre à jour une ressource | Modifier un profil utilisateur |
-| **DELETE** | Supprimer une ressource | Supprimer un compte utilisateur |
+## 4. Common HTTP Status Codes
 
----
+| **Code** | **Meaning**       | **Example**                                           |
+|----------|-------------------|-------------------------------------------------------|
+| **200**  | OK (success)      | A page loads correctly                               |
+| **301**  | Permanent redirect | A site has changed its address                        |
+| **403**  | Forbidden         | Attempt to access a page without permissions          |
+| **404**  | Not found         | The requested URL does not exist                     |
+| **500**  | Server error      | A server-side issue prevents display                 |
 
-## 4. Codes de statut HTTP courants
+➡️ HTTP status codes are returned by the server to indicate the state of a request. They are classified into categories:
 
-| **Code** | **Signification** | **Exemple** |
-|---------|----------------|----------|
-| **200** | OK (succès) | Une page se charge correctement |
-| **301** | Redirection permanente | Un site a changé d’adresse |
-| **403** | Accès interdit | Tentative d’accès à une page sans permissions |
-| **404** | Page non trouvée | L’URL demandée n’existe pas |
-| **500** | Erreur serveur | Un problème côté serveur empêche l’affichage |
-
-➡️  Les codes de statut HTTP sont renvoyés par le serveur pour indiquer l’état d’une requête. Ils sont classés par catégories :  
-- **1xx** : Informations  
-- **2xx** : Succès  
-- **3xx** : Redirections  
-- **4xx** : Erreurs côté client  
-- **5xx** : Erreurs côté serveur  
-
----
+- **1xx**: Informational
+- **2xx**: Success
+- **3xx**: Redirections
+- **4xx**: Client-side errors
+- **5xx**: Server-side errors
