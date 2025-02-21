@@ -16,10 +16,9 @@ def hello_world():
 def get_users():
     return jsonify(list(users.keys()))
 
-@app.route("/status")
+@app.route("/status ")
 def status():
     return "OK"
-
 
 @app.route("/users/<username>")
 def username(username):
