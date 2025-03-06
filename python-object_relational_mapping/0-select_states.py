@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 '''Import all states from hbtn_0d_usa'''
 
-
 import MySQLdb
 import sys
-
 
 if __name__ == '__main__':
     db = MySQLdb.connect(
@@ -14,7 +12,7 @@ if __name__ == '__main__':
         passwd=sys.argv[2],
         db=sys.argv[3],
         charset="utf8"
-        )
+    )
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_rows = cur.fetchall()
@@ -22,4 +20,3 @@ if __name__ == '__main__':
         print(row)
     cur.close()
     db.close()
-    
