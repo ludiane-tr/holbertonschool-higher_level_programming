@@ -19,16 +19,14 @@ def about():
 def contact():
     return render_template('contact.html')  # Renders the contact.html template for the contact page
 
-# Route for displaying a list of items from a JSON file
+# Route for the items page
 @app.route('/items')
 def items():
-    # Read the data from the items.json file
     with open('items.json') as f:
-        data = json.load(f)  # Parse the JSON data into a Python dictionary
+        data = json.load(f)
 
     # Pass the list of items to the items.html template
-    return render_template('items.html', items=data['items'])  # Render the items.html template with items
+    return render_template('items.html', items=data['items'])
 
-# Start the Flask application
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)  # Run the app in debug mode on port 5000
+    app.run(debug=True, port=5000)
