@@ -22,11 +22,10 @@ def contact():
 # Route for the items page
 @app.route('/items')
 def items():
-    with open('items.json') as f:
-        data = json.load(f)
-
-    # Pass the list of items to the items.html template
-    return render_template('items.html', items=data['items'])
+    with open('items.json') as file:
+        data = json.load(file)
+    items_list = data.get('items', [])
+    return render_template('items.html', items=items_list)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
